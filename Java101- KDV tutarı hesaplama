@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+
+       double tutar, kdvOran = 0.18, kdvTutar, kdvliTutar;
+       Scanner inp = new Scanner(System.in);
+       System.out.print("ücret tutarını giriniz : ");
+       tutar = inp.nextDouble();
+
+       kdvTutar = tutar * kdvOran;
+       kdvliTutar = tutar + kdvTutar;
+
+       System.out.println("Kdv tutarı: " + kdvTutar);
+       System.out.println("Kdv'li fiyat: " + kdvliTutar);
+       System.out.println("Kdv'siz tutar: " + tutar);
+
+
+   }
+
+}
