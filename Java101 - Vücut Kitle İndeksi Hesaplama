@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+// Lütfen boyunuzu (metre cinsinde) giriniz : 1,72
+// Lütfen kilonuzu giriniz : 105
+// Vücut Kitle İndeksiniz : 35.49215792320173
+
+// Formül
+// Kilo (kg) / Boy(m) * Boy(m)
+
+public class Main {
+   public static void main(String[] args) {
+
+       double kg;
+       double m;
+
+       System.out.print("Lütfen boyunuzu giriniz: ");
+       Scanner inp = new Scanner(System.in);
+       m = inp.nextDouble();
+
+       System.out.print("Lütfen kilonuzu giriniz: ");
+       Scanner inp2 = new Scanner(System.in);
+       kg = inp.nextInt();
+
+       double kitleindex = kg / (m * m);
+
+       System.out.print("Vucut indeksiniz: " + kitleindex);
+
+   }
+
+}
