@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+// Armut : 2,14 TL
+//Elma : 3,67 TL
+//Domates : 1,11 TL
+//Muz: 0,95 TL
+//Patlıcan : 5,00 TL
+
+public class Main {
+   public static void main(String[] args) {
+
+       double armut = 2;
+       double domates = 1.11;
+       double elma = 3.67;
+       double muz = 0.95;
+       double patlican = 5;
+       double tutar;
+
+       int armutKg, elmaKg, domatesKg, muzKg, patlicanKg;
+
+       Scanner in = new Scanner(System.in);
+       System.out.print("Armut kaç kilo: ");
+       armutKg = in.nextInt();
+
+       Scanner in2 = new Scanner(System.in);
+       System.out.print("Elma kaç kilo: ");
+       elmaKg = in2.nextInt();
+
+       Scanner in3 = new Scanner(System.in);
+       System.out.print("Domates kaç kilo: ");
+       domatesKg = in3.nextInt();
+
+       Scanner in4 = new Scanner(System.in);
+       System.out.print("Muz kaç kilo: ");
+       muzKg = in4.nextInt();
+
+       Scanner in5 = new Scanner(System.in);
+       System.out.print("Patlican kaç kilo: ");
+       patlicanKg = in5.nextInt();
+
+       tutar = ((armut * armutKg) + (elma * elmaKg) + (domates * domatesKg) + (muz * muzKg) + (patlican * patlicanKg));
+
+       System.out.print("Toplam tutar: " + tutar);
+
+
+   }
+
+}
