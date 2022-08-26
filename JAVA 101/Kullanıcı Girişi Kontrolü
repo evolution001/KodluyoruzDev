@@ -1,0 +1,23 @@
+import javax.swing.*;
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+
+      String userName, password;
+
+      Scanner inp = new Scanner(System.in);
+
+      System.out.print("Lutfen kullanici adini girin: ");
+      userName = inp.nextLine();
+
+      System.out.print("Lutfen sifre girin: ");
+      password = inp.nextLine();
+
+      if (userName.equals("pakita") && password.equals("java")) {
+         System.out.print("Giris yapiniz");
+      } else {
+         System.out.print("Tekrar deneyiniz");
+      }
+   }
+}
