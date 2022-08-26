@@ -1,0 +1,32 @@
+import javax.swing.*;
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+
+      int mat, fizik, kimya, turkce;
+
+      Scanner inp = new Scanner(System.in);
+      System.out.print("Mat notunu gir: ");
+      mat = inp.nextInt();
+
+      System.out.print("Fizik notunu gir: ");
+      fizik = inp.nextInt();
+
+      System.out.print("Kimya notunu gir: ");
+      kimya = inp.nextInt();
+
+      System.out.print("Turkce notunu gir: ");
+      turkce = inp.nextInt();
+
+      double average = (mat+turkce+fizik+kimya) / 4;
+
+      if(average <=55){
+         System.out.println("Sinifta kaldiniz");
+         System.out.print("Ortalamaniz: " + average);
+      } else {
+         System.out.println("Geçtiniz, tebrikler");
+         System.out.print("Ortalamaniz: " + average);
+      }
+   }
+}
